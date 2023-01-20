@@ -315,15 +315,64 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* tablet styles here */
+
+  header .content-wrapper {
+    width: 100%;  
+  }
+
+  /* logo width 30% */
+
+  header nav {
+    width: 30%;
+    margin: 33px 0;
+  }
+
+  .hero-area {
+    margin: 100px 0;
+    width: 90%;
+  }
+
+  .hero-area h1 {
+    margin: 0;
+  }
+
+  .aside {
+    margin: 50px 0;
+  }
+
+  .form-description {
+    margin: 0;
+  }
+
+  .form {
+    margin: 0;
+  }
+
+  .features {
+    margin: 100px 0;
+  }
+
+  .features h1 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .fontawesome-icon {
+    margin-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  .reviews {
+    width: 100%;
+    margin: 100px 0;
+  }
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media only screen and (min-width: 1200px) {
+  /* desktop styles here */
 }
 
 /* ==========================================================================

@@ -100,15 +100,21 @@ textarea {
 
    }
 
+   header {
+    padding: 15px 0;
+   }
+
    header .content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    width: 60%;
+    margin: 0;
    }
 
    .header-divider {
-
+    
    }
 
    header nav {
@@ -116,22 +122,52 @@ textarea {
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
+    width: 60%;
+    margin: 20px p 15px 0;
    }
 
    header nav ul {
     display: flex;
     justify-content: space-around;
+    width: 60%;
    }
 
    .hero-area {
+    padding-top: 50px;
 
    }
+
+   aside .content-wrapper {
+    margin-bottom: 50px;
+   }
+
+   aside h3 {
+    padding: 20px 0;
+   }
+
+   aside p {
+    padding-bottom: 30px;
+   }
+
+   #email {
+    padding: 1em;
+    margin-bottom: 20px;
+   }
+
+   /* how to style button? */
+
+
 
    .features {
 
    }
 
+   .features p {
+    margin: 0;
+   }
+
    .features-items {
+    width: 60%;
 
    }
 
@@ -147,8 +183,20 @@ textarea {
 
    }
 
+   .reviews h3 {
+    width: 100%;
+   }
+
    .footer-content {
 
+   }
+
+   footer .content-wrapper {
+    width: 60%;
+   }
+
+   .footer p {
+    margin: 0;
    }
 
    .contact {

@@ -506,6 +506,102 @@ textarea {
   /* desktop styles here */
 }
 
+.content-wrapper {
+  max-width: 960px;
+}
+
+
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 25%;
+}
+
+/* hero area */
+
+.hero-area h1 {
+  width: 60%;
+}
+
+/* aside */
+
+aside .content-wrapper {
+  justify-content: space-around;
+}
+
+aside .content-wrapper .form-description,
+aside .content-wrapper .form {
+  width: 30%;
+}
+
+/* features */
+
+.features h2 {
+  width: 90%;
+}
+
+.features article {
+  flex-basis: 33%;
+}
+
+/* review */
+
+.reviews article div {
+  width: 42%;
+}
+
+/* not in solution code
+.reviews h2 {
+  margin-bottom: 50px;
+}
+
+.reviews h3 {
+  width: 33%;
+}
+
+.reviews p {
+  width: 45%;
+}
+
+*/
+
+/* footer */
+
+/* not in solution code
+footer .content-wrapper {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer-content {
+  width: 25%;
+}
+
+footer .social {
+  width: 25%;
+}
+
+*/
+
+
+/* ===================================================================
+  About page
+  ====================================================================
+*/
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+
+  /* ==================================================================
+    FAQ page
+    ====================================================================
+  */
+
+  .faq h2 {
+    width: 100%;
+  }
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:

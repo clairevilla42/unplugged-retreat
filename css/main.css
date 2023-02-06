@@ -375,6 +375,7 @@ textarea {
 
   header {
     justify-content: space-between;
+    padding: 33px 0;
   }
   
   header .content-wrapper {
@@ -389,29 +390,20 @@ textarea {
   }
   
   header nav {
-    width: 30%;
-    margin: 33px 0;
+    width: 20%;
   }
 
   header nav ul {
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 
   /* hero area */
 
-  .hero-area {
-    margin: 100px 0;
-    width: 90%;
-  }
-
-  .hero-area h1 {
-    margin: 0;
-  }
-
   /* aside */
 
+ 
   aside .content-wrapper .form-description,
-  .form {
+  aside .content-wrapper .form {
     width: 40%;
     margin: 0;
   }
@@ -423,56 +415,51 @@ textarea {
     margin: 50px 0;
   }
 
-  .form-description {
-    margin: 0;
-    width: 40%;
-    padding-right: 10%;
-  }
-
-  .form {
-    margin: 0;
-    width: 40%;
-    padding-left: 10%;
-  }
 
   /* features */
 
-  .features {
-    margin: 100px 0;
-  }
-
   .features article {
-    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column-wrap;
+    flex-basis: 50%;
   }
 
-  .features h1 {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .fontawesome-icon {
-    margin-bottom: 30px;
-    padding-top: 30px;
+  .features .features-item-description {
+    width: 50%;
   }
 
   /* reviews */
 
-  .reviews {
-    width: 100%;
-    margin: 100px 0;
+   .reviews article {
+    display: flex;
+    justify-content: space-between;
   }
 
-  .reviews article {
-    display: flex;
-    justify-content: center;
+  .reviews article div {
+    width: 49%;
   }
 
   /* footer */
 
+  footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
+
   .footer-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer .copyright {
+    width: 100%;
   }
 
   /* ---------------- about page ----------------- */
@@ -481,10 +468,11 @@ textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
   }
 
   .mission-content p {
-    width: 50%;
+    width: 45%;
   }
 
   .contact-section .content-wrapper h2 {
@@ -495,15 +483,13 @@ textarea {
   .contact-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
 
   /* ------------- faq page ---------------- */
 
   .faq-content {
-    display: flex;
-    justify-content: space-between;
-    flex-basis: 40%;
+    flex-basis: 45%;
   }
 
   .faq .content-wrapper {

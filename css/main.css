@@ -135,11 +135,11 @@ textarea {
 
 
    img {
-
+    width: 100%;
    }
-   
-   figure {
 
+   figure {
+    margin: 0;
    }
 
    address {
@@ -165,6 +165,14 @@ textarea {
 
    header {
     padding: 15px 0;
+   }
+
+   header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
    }
 
    header .content-wrapper {
@@ -249,8 +257,13 @@ textarea {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    background-image: url('../img/unplugged-retreat.jpg');
+    background: url('../img/unplugged-retreat.jpg') center no-repeat #333;
+    background-size: cover;
+    min-height: 500px;
+    /* background-repeat: no-repeat;
     background-position: center;
+    */
+    
    }
 
    .hero-area h1 {
@@ -321,8 +334,8 @@ textarea {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    background: url('../img/unplugged-retreat-features.jpg'), center;
-
+    background: url('../img/unplugged-retreat-features.jpg') center no-repeat #333;
+    background-size: cover;
    }
 
    .features h2 {
@@ -357,16 +370,9 @@ textarea {
     justify-content: center;
     flex-flow: row wrap;
     background: #2a423a;
+  }
 
-   }
-
-   /* not in solution code 
-   .reviews figure {
-    max-width: 500px;
-   }
-   */
-
-   .reviews h2 {
+  .reviews h2 {
     margin-bottom: 40px;
     line-height: 1em;
    }
@@ -770,12 +776,17 @@ header .nav {
 /* aside */
 
 aside .content-wrapper {
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 aside .content-wrapper .form-description,
 aside .content-wrapper .form {
   width: 30%;
+}
+
+aside .form {
+  margin-bottom: 50px;
 }
 
 /* features */

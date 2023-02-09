@@ -180,7 +180,6 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    /* width: 60%; not in solution code */
     margin: 0;
    }
 
@@ -197,22 +196,22 @@ textarea {
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
-    width: 60%;
-    margin: 20px p 15px 0;
+    width: 100%;
     font-size: 1.125em;
     font-weight: 700;
     text-transform: uppercase;
-   }
+  }
 
    header nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
     list-style: none;
    }
 
    header nav ul li {
     font-size: 1.125em;
+    margin: 20px;
    }
 
    footer {
@@ -231,6 +230,7 @@ textarea {
 
    footer .contact {
     margin-bottom: 50px;
+    text-align: center;
    }
 
    footer .social-icons {
@@ -257,6 +257,7 @@ textarea {
 
    footer .copyright {
     margin: 20px 0;
+    text-align: center;
    }
 
    /* -------------- main area, mobile styles ---------------- */
@@ -283,61 +284,6 @@ textarea {
     font-weight: 500;
    }
 
-   /* aside */
-   aside {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    background: #527158;
-   }
-
-   aside .form {
-    margin-top: 30px;
-   }
-
-   input [type=text] {
-    box-sizing: border-box;
-    width: 100%;
-    color: #2a423a;
-    font-style: italic;
-    padding: 1em;
-   }
-
-   input [type=button] {
-    width: 100%;
-    padding: 20px 0;
-    margin-top: 20px;
-    background-color: #2a423a;
-    font-family: 'Poppins', Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    font-size: 1.125em;
-    color: #e2e3ed;
-    border: none;
-    text-align: center;
-    text-transform: uppercase;
-   }
-
-   /* none of these in solution code 
-   
-   aside h3 {
-    padding: 20px 0;
-   }
-
-   aside p {
-    padding-bottom: 30px;
-   }
-
-   #email {
-    padding: 1em;
-    margin-bottom: 20px;
-   }
-
-   */
-
-   /* how to style button? */
-
-
    /* features */
 
    .features {
@@ -350,6 +296,7 @@ textarea {
 
    .features h2 {
     margin-bottom: 60px;
+    text-align: center;
    }
 
    .features article {
@@ -371,29 +318,22 @@ textarea {
     flex-flow: row wrap;
    }
 
-   .features i {
+   /*.features i {
     font-size: 3.75em;
     margin-bottom: 40px;
    }
+   */
 
-
-   /* reviews */
-
-   .reviews {
+   .features i {
     display: flex;
     justify-content: center;
-    flex-flow: row wrap;
-    background: #2a423a;
-  }
-
-  .reviews h2 {
-    margin-bottom: 40px;
-    line-height: 1em;
-   }
-
-   .reviews h3 {
-    width: 55%;
-    margin-bottom: 20px 0;
+    align-items: center;
+    background-color: #527158;
+    font-size: 3.75em;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 0 15px;
    }
 
 
@@ -408,6 +348,12 @@ textarea {
   align-items: center;
   flex-flow: row wrap;
 }
+
+.mission h2 {
+  width: 100%;
+  text-align: center;
+}
+
 
 .map-container {
   position: relative;
@@ -598,26 +544,23 @@ FAQ page
   
   header .content-wrapper {
     width: 100%;  
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
-  header figure {
-    width: 30%;
-  }
-
-  /* not in solution code 
   .header-divider {
     display: none;
   }
-  */
   
-  header nav {
-    width: 20%;
+  
+  /* header nav {
+    width: 100%;
   }
+  */
 
   header nav ul {
     justify-content: space-between;
   }
+
 
   /* hero area */
 
@@ -627,22 +570,7 @@ FAQ page
     margin: 0;
   }
 
-  /* aside */
-
- 
-  aside .content-wrapper .form-description,
-  aside .content-wrapper .form {
-    width: 40%;
-    margin: 0;
-  }
-
-  aside .content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-    margin: 50px 0;
-  }
-
+  
 
   /* features */
 
@@ -663,20 +591,7 @@ FAQ page
     width: 62%;
   }
 
-  /* reviews */
-
-   .reviews article {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .reviews h2 {
-    width: 85%;
-  }
-
-  .reviews article div {
-    width: 49%;
-  }
+  
 
   /* footer */
 
@@ -773,6 +688,14 @@ header {
   padding: 15px 0;
 }
 
+header .content-wrapper {
+  width: 100%;
+}
+
+header nav ul {
+  justify-content: flex-end;
+}
+
 .content-wrapper {
   max-width: 960px;
 }
@@ -806,36 +729,26 @@ header .nav {
   font-size: 3.75em;
 }
 
-/* aside */
-
-aside .content-wrapper {
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-aside .content-wrapper .form-description,
-aside .content-wrapper .form {
-  width: 30%;
-}
-
-aside .form {
-  margin-bottom: 50px;
-}
-
 /* features */
 
 .features h2 {
-  width: 90%;
+  width: 85%;
 }
 
 .features article {
-  flex-basis: 33%;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* review */
 
 .reviews article div {
-  width: 42%;
+  width: 47%;
+}
+
+.reviews article figure {
+  width: 47%;
+  margin-top: 25px;
 }
 
 .reviews h2 {
